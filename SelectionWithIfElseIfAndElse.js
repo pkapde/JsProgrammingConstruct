@@ -51,3 +51,25 @@ else if (number == 100000000) numValue = "Ten Crore";
 else if (number == 1000000000) numValue = "Hundred Crore";
 else console.log("Invalid user input.");
 console.log("Your entered number is: " + numValue);
+
+// 4. Enter 3 numbers. Do following arithmetic operation and find the one that is maximum and minimum. 
+// 4.1. a + b * c
+// 4.2. a % b + c 
+// 4.3. c + a / b 
+// 4.4. a * b + c
+console.log("\nEnter 3 random numbers for analysis:");
+const a = Number(prompt("Enter a: "));
+const b = Number(prompt("Enter b: "));
+const c = Number(prompt("Enter c: "));
+console.log(`a + b * c = ${parseInt(a + b * c)}
+a % b + c = ${parseInt(a % b + c)}
+c + a / b = ${parseInt(c + a / b)}
+a * b + c = ${parseInt(a * b + c)}`);
+let max = -Infinity, min = +Infinity;
+if (a > max) max = a;
+if (a < min) min = a;
+if (b > max) max = b;
+if (b < min) min = b;
+if (c > max) max = c;
+if (c < min) min = c;
+console.log(`Maximum of a,b,c is: ${max}\nMinimum of a,b,c is: ${min}`);
