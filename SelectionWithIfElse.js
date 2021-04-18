@@ -39,3 +39,9 @@ if (year >= 1000 && year <= 9999) {
     else console.log("It's a non-leap year.");
 }
 else console.log("User-input is not a 4-digit year.");
+
+// 4. Write a program to simulate a coin flip and print out "Heads" or "Tails" accordingly.
+console.log("\nTo check heads or tails for a coin-flip using random function:")
+const toss = Math.floor(Math.random() * 10) % 2, Heads = 0;
+if (toss === Heads) console.log("It's Heads.");
+else console.log("It's Tails.");
