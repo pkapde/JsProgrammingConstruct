@@ -65,3 +65,16 @@ if (n4 >= 0 && Number.isInteger(n4)) {
     }
     console.log(n4 + "! = " + factorial);
 } else console.log("Invalid user input.");
+
+// 6. Write a program to compute factors of a number N using prime factorization method.
+console.log("\nTo find the factors of a number(n) using prime factorization:");
+let n5 = Number(prompt("Enter a positive integer (i.e. 'n' value): "));
+if (n5 >= 1 && Number.isInteger(n5)) {
+    console.log("Factors of " + n5 + " are:");
+    for (let i = 1; i * i <= n5; i++)
+        if (n5 % i == 0) {
+            console.log(i);
+            if (n5 / i != i)    // prime-factorization
+                console.log(n5 / i);
+        }
+} else console.log("Invalid user input.");
