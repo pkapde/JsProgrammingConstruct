@@ -54,3 +54,14 @@ if (low <= high && low > 0 && Number.isInteger(low) && Number.isInteger(high)) {
         if (isPrime) console.log(i);
     }
 } else console.log("Invalid user number-range input.");
+
+// 5. Write a program that computes factorial of a number taken as input.
+console.log("\nTo compute factorial of a number:");
+const n4 = Number(prompt("Enter a non-negative integer: "));
+if (n4 >= 0 && Number.isInteger(n4)) {
+    let factorial = 1;
+    for (let i = 2; i <= n4; i++) {
+        factorial *= i;
+    }
+    console.log(n4 + "! = " + factorial);
+} else console.log("Invalid user input.");
