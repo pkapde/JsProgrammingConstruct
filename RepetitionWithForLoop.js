@@ -19,3 +19,19 @@ if (n2 >= 1 && Number.isInteger(n2)) {
     }
     console.log("The harmonic number is: " + ans);
 } else console.log("Enter only positive integers.");
+
+// 3. Write a program that takes a input and determines if the number is a prime.
+console.log("\nTo determine if the number is a prime or not:");
+const n3 = Number(prompt("Enter a positive integer: "));
+if (n3 >= 1 && Number.isInteger(n3)) {
+    let isPrime = true;
+    if (n3 == 1) isPrime = false;
+    for (let i = 2; i <= n3 / 2; i++) {
+        if (n3 % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+    if (isPrime) console.log(n3 + " is a prime number.");
+    else console.log(n3 + " is a non-prime number.");
+} else console.log("Enter only positive integers.");
